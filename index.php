@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inmuebles FGJ</title>
+    <style><?php include 'css/estilos.css'?></style>
+    <title>Index</title>
 </head>
 <body>
-    <script src="./js/main.js"></script>
+
+    <?php include './main.php';?>
     
 </body>
 </html>

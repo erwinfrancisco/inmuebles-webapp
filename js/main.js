@@ -1,3 +1,2 @@
-// Test
+// Funciones:
 
-alert("Prueba enlace javascript")

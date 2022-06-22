@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    position: absolute;
+    display: flex;
+    top: 25px;
+    left: 25px;
+}
