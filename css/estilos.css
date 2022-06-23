@@ -11,10 +11,53 @@ body{
     top: 2%;
     left: 2%;
 }
+
+/* Mapa SVG de las Fiscalías de Distrito */
+.mapa-fiscalias{
+    width: 400px;
+    padding-left: 5%;
+    
+}
+
+.mapa-fiscalias-svg{
+    text-align: center;
+    display:block;max-width:400px;height:640px;
+}
+
+.mapa-fiscalias-svg-nuevo-laredo:hover{
+    transform: scale(1.01);
+    
+}
+.mapa-fiscalias-svg-reynosa:hover{
+    transform: scale(1.003);
+
+}
+.mapa-fiscalias-svg-matamoros:hover{
+    transform: scale(1.003);
+
+}
+.mapa-fiscalias-svg-victoria:hover{
+    transform: scale(1.003);
+  
+}
+.mapa-fiscalias-svg-el-mante:hover{
+    transform: scale(1.003);
+
+}
+.mapa-fiscalias-svg-zona-sur:hover{
+    transform: scale(1.004);
+
+}
+
+
+
+
+/* Footer */
 footer{
+    margin-top: 10px;
     bottom: 0%;
     left: 0%;
-    position:absolute;
+    position:relative;
     width: 100%;
     height: 12%;
     background-color: #1C2136;
