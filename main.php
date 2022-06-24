@@ -19,12 +19,12 @@
     <!-- Tabla de contenido de mapa -->
 
     <div class="tabla-contenido-mapa-fiscalias">
-        <div id="tcmf-nuevo-laredo">Fiscalía de Distrito I. Nuevo Laredo</div>
-        <div id="tcmf-reynosa">Fiscalía de Distrito II. Reynosa</div>
-        <div id="tcmf-matamoros">Fiscalía de Distrito III. Matamoros</div>
-        <div id="tcmf-victoria">Fiscalía de Distrito IV. Victoria</div>
-        <div id="tcmf-el-mante">Fiscalía de Distrito V. El MANTE</div>
-        <div id="tcmf-zona-sur">Fiscalía de Distrito vi. Zona Sur</div>
+        <div id="tcmf-nuevo-laredo">Fiscalía de Distrito I. <span>Nuevo Laredo</span></div>
+        <div id="tcmf-reynosa">Fiscalía de Distrito II. <span>Reynosa</span></div>
+        <div id="tcmf-matamoros">Fiscalía de Distrito III. <span>Matamoros</span></div>
+        <div id="tcmf-victoria">Fiscalía de Distrito IV. <span>Victoria</span></div>
+        <div id="tcmf-el-mante">  Fiscalía de Distrito V. <span>El Mante</span></div>
+        <div id="tcmf-zona-sur">Fiscalía de Distrito VI. <span>Zona Sur</span></div>
     </div>
 
     <!-- Mapa Fiscalías de Distrito -->

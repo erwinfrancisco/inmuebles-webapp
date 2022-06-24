@@ -20,19 +20,62 @@ body{
     padding: 1.25rem;
     position: relative;
     float:left;
-    width: 12.5rem;
-    height: 18.75rem;
-    border: 1px dashed #68E1FD;
+    border: 1px dashed #13678B;
     border-radius: .625rem;
 }
-div[id^='tcmf']{
-    border: 1px;
+.tabla-contenido-mapa-fiscalias > div > span{
+    font-weight: bold;
 }
+
+#tcmf-nuevo-laredo, #tcmf-reynosa, #tcmf-matamoros, #tcmf-victoria, #tcmf-el-mante,#tcmf-zona-sur{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    font-size: .8rem;
+    width: 134px;
+    height: 25px;
+    padding: 6px;
+    margin: 10px;
+}
+
+/*Botones de tabla de contenido*/
+#tcmf-nuevo-laredo{
+    border:2px solid #22495A;
+    color:#13678B;
+
+}
+
+#tcmf-reynosa{
+    border:2px solid #13678B;
+    color:#13678B;
+
+}
+#tcmf-matamoros{
+    border:2px solid #1D7A92;
+    color:#13678B;
+
+}
+
+#tcmf-victoria{
+    border:2.5px solid #45C4AF;
+    color:#13678B;
+}
+#tcmf-el-mante{
+    border:2.5px solid #9AECA4;
+    color:#13678B;
+}
+#tcmf-zona-sur{
+    border:3px solid #DAFDB9;
+    color:#13678B;
+
+}
+
 
 /* Mapa SVG de las Fiscalías de Distrito */
 .mapa-fiscalias{
     width: 25rem;
-    padding-left: 18.5rem;
+    padding-left: 17rem;
     
 }
 
