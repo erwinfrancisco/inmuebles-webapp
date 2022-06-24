@@ -11,17 +11,34 @@ body{
     top: 2%;
     left: 2%;
 }
+/*Tabla de contenido de Mapas de Fiscalías de Distrito*/
+
+.tabla-contenido-mapa-fiscalias{
+    
+    margin-left: 3rem;
+    margin-top: 8rem;
+    padding: 1.25rem;
+    position: relative;
+    float:left;
+    width: 12.5rem;
+    height: 18.75rem;
+    border: 1px dashed #68E1FD;
+    border-radius: .625rem;
+}
+div[id^='tcmf']{
+    border: 1px;
+}
 
 /* Mapa SVG de las Fiscalías de Distrito */
 .mapa-fiscalias{
-    width: 400px;
-    padding-left: 5%;
+    width: 25rem;
+    padding-left: 18.5rem;
     
 }
 
 .mapa-fiscalias-svg{
     text-align: center;
-    display:block;max-width:400px;height:640px;
+    display:block;max-width:25rem;height:40rem;
 }
 
 .mapa-fiscalias-svg-nuevo-laredo:hover{
