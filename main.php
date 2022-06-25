@@ -60,7 +60,24 @@
 
         </svg>
     </div>
-    
+    <!-- Contenido de Inmuebles por Fiscalía -->
+    <div>
+        <div>
+            <h1>Inmuebles por Fiscalía de Distrito</h1>
+        </div>
+        <div>
+            <h2><span id="municipio">Municipio Seleccionado</span></h2>
+        </div>
+        <div>
+            <h3>Centro de Justicia</h3>
+            <p>Domicilio conocido s/n Col. Conocida, CP. 87000</p>
+            <p>Nuevo Laredo, Tamaulipas</p>
+            <p><a href="tel:+34678567876">8343140947</a></p>
+            <a href="ficha.php">Ver ficha de inmueble...</a>
+
+        </div>
+        
+    </div>
     
     <script src="./js/main.js"></script>
     
