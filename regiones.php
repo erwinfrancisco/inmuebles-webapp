@@ -35,6 +35,4 @@ $array = ['Imelda', 'Francisco', 'Bryan', 'Fátima', 'Erwin', 'Keily', 'Pedrito'
 
 foreach($array as $nombre){
     printf("<h3>Yo {$nombre} y soy parte de la familia Flores.</h3>");
-    echo $array[1];
-    echo $array[6];
 };

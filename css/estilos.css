@@ -1,3 +1,7 @@
+header{
+    width: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -7,21 +11,60 @@ body{
 
 .logo{
     position: absolute;
-    display: flex;
+    display: block;
     top: 2%;
     left: 2%;
+}
+.titulo-principal{
+    top:1px;
+    width: 100%;
+    position: absolute;
+    display:inline-block;
+    
+}
+.titulo-principal > h1{
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    
+}
+@media only screen and (max-width: 1000px){
+    .titulo-principal{text-align: center;}
+    .titulo-principal > h1 {font-size: 1.6rem;
+    text-align: center;}
+
+}
+
+@media only screen and (max-width: 850px){
+    .titulo-principal{text-align: center;padding-right: 10px;}
+    .titulo-principal > h1 {font-size: 1.4rem;
+    text-align: right;padding-right: 10px;}
+
+}
+@media only screen and (max-width: 500px){
+    .titulo-principal{text-align: center;padding-right: 10px;}
+    .titulo-principal > h1 {font-size: 1rem;
+    text-align: right;}
+
+}
+/* Main */
+main{
+    display:inline-flex;
 }
 /*Tabla de contenido de Mapas del Mapa de Fiscalías de Distrito*/
 
 .tabla-contenido-mapa-fiscalias{
     
-    margin-left: 3rem;
-    margin-top: 8rem;
+    margin-top: 11%;
+    margin-bottom: auto;
+    margin-left: 4rem;
+    margin-right: 2.25rem;
     padding: 1.25rem;
     position: relative;
     float:left;
     border: 1px dashed #13678B;
     border-radius: .625rem;
+    display: block;
 }
 .tabla-contenido-mapa-fiscalias > div > span{
     font-weight: bold;
@@ -75,13 +118,16 @@ body{
 /* Mapa SVG de las Fiscalías de Distrito */
 .mapa-fiscalias{
     width: 25rem;
-    padding-left: 17rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+    padding: auto;
     
 }
 
 .mapa-fiscalias-svg{
     text-align: center;
-    display:block;max-width:25rem;height:40rem;
+    max-width:25rem;
+    height:40rem;
 }
 
 .mapa-fiscalias-svg-nuevo-laredo:hover{
@@ -109,17 +155,64 @@ body{
 
 }
 
+/* Contenido de las consultas de los inmuebles */
 
+.contenido{
+    margin-top: 0%;
+    margin-right: 0%;
+    padding: 1.25rem;
+    position: relative;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    width: 580px;
+}
+.contenido-bloque{
+    padding-top: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+.contenido-bloque > div{
+    margin: 10px;
+}
+.contenido-titulo{
+    padding-top: 3px;
+    padding-left: 15px;
+    font-size: .85rem;
+    background-color: #1C2136;
+    color: white;
+    border-radius: 5px;
+    
+}
+.contenido-titulo > h2{
+    
+    margin-top:5px;
+    padding-bottom: 5px;
+}
+.contenido-texto-cuerpo{
+    padding-left: 15px;
+    padding-bottom:15px;
+}
+.contenido-texto-cuerpo >h3{
+    
+    margin-top:0px;
+    padding-left: 2px;
+    margin-bottom: 10px;
+    color:black;
+}
+.contenido-texto-cuerpo > p{
+    font-size: .84rem;
+    margin: 3px;
+    padding: 0px;
+}
 
 
 /* Footer */
 footer{
-    margin-top: 10px;
     bottom: 0%;
-    left: 0%;
+    margin-top: 40px;
+    margin-right: 10px;
     position:relative;
     width: 100%;
-    height: 12%;
     background-color: #1C2136;
 }
 .div_footer{
