@@ -66,7 +66,8 @@
         <!-- Contenido de Inmuebles por Fiscalía -->
         
         <div class="contenido">
-            <div class="contenido-bloque">
+            
+            <!-- <div class="contenido-bloque">
                 <div class="contenido-titulo">
                     <h2><span id="titulo-municipio">Nuevo Laredo</span></h2>
                 </div>
@@ -79,8 +80,8 @@
                         <p><a href="ficha.php">Ver ficha de inmueble...</a></p>
                     </div>
                 </div> 
-            </div>
-            <div class="contenido-bloque">
+            </div> -->
+            <!-- <div class="contenido-bloque">
                 <div class="contenido-titulo">
                     <h2><span id="titulo-municipio">Nuevo Laredo</span></h2>
                 </div>
@@ -93,8 +94,8 @@
                         <p><a href="ficha.php">Ver ficha de inmueble...</a></p>
                     </div>
                 </div> 
-            </div>
-            <div class="contenido-bloque">
+            </div> -->
+            <!-- <div class="contenido-bloque">
                 <div class="contenido-titulo">
                     <h2><span id="titulo-municipio">Nuevo Laredo</span></h2>
                 </div>
@@ -107,7 +108,7 @@
                         <p><a href="ficha.php">Ver ficha de inmueble...</a></p>
                     </div>
                 </div> 
-            </div>
+            </div> -->
             
         </div>
         

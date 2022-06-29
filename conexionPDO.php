@@ -1,23 +1,22 @@
 <?php
-$user = "root";
-$pass = "";
 
-$pdo = new PDO('mysql:hostname=127.0.0.1, dbname=fgj', $user, $pass);
+try{
+    $mbd = new PDO('mysql:host=localhost;dbname=fgj', "root", null);
+    
+    foreach($mbd->query("SELECT * from inmuebles where municipio = 'Nuevo Laredo'") as $fila) {
+        echo "<pre>";
+        print_r("<br>Tipo de inmueble: " . $fila[1]);
+        print_r("<br>Nombre: " . $fila[2]);
+        print_r("<br>Domicilio: " . $fila[10]);
+        print_r("<br>" . $fila[11] . " C.P." . $fila[12]);
+        print_r("<br>Superficie Terreno: " . $fila[5] ." m2");
+        print_r("<br>Construcción: " . $fila[6] . " m2");
 
-$consulta = "select * from inmuebles";
-
-// EJECUCIÓN DE UNA CONSULTA PREPARADA
-$resultado = $pdo->prepare($consulta);
-// if (!$resultado) {
-//     echo "fallo";       // Si la preparación de la consulta falla
-// } elseif (!$resultado->execute([parámetros de la consulta]) {
-//     ...        // Si la ejecución de la consulta falla
-// } else {
-//     ...        // Si la consulta se ejecuta correctamente
-// }
-
-$resultado->execute();
-
-foreach($resultado as $i){
-    echo $i;
-}
+        echo "</pre>";
+    }
+    $mbd = null;
+}catch(PDOException $e) {
+    print "¡Error!: " . $e->getMessage() . "<br/>";
+    die();
+};
+?>

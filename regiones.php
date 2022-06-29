@@ -1,20 +1,21 @@
 <?php
 
 include("./main.php");
+include("./dbconnect.php");
 
 if(isset($_REQUEST['fiscalia'])){
     if($_REQUEST['fiscalia'] == "nuevo-laredo"){
-        echo "<h1>estas en nuevo laredo</h1>";
+        consultaRegiones($consulta_nuevo_laredo);
     }elseif($_REQUEST['fiscalia'] == "matamoros"){
-        echo "<h1>estas en matamoros</h1>";
+        consultaRegiones($consulta_matamoros);
     }elseif($_REQUEST['fiscalia'] == "reynosa"){
-        echo "<h1>estas en reynosa</h1>";
+        consultaRegiones($consulta_reynosa);
     }elseif($_REQUEST['fiscalia'] == "victoria"){
-        echo "<h1>estas en victoria</h1>";
+        consultaRegiones($consulta_victoria);
     }elseif($_REQUEST['fiscalia'] == "el-mante"){
-        echo "<h1>estas en mante</h1>";
+        consultaRegiones($consulta_el_mante);
     }elseif($_REQUEST['fiscalia'] == "zona-sur"){
-        echo "<h1>estas en Zona Sur</h1>";
+        consultaRegiones($consulta_zona_sur);
     }else{
         echo "verifica tu solicitud";
     }
@@ -22,17 +23,3 @@ if(isset($_REQUEST['fiscalia'])){
 
 
 }
-
-
-echo "<pre>";
-echo print_r($_REQUEST);
-echo "</pre>";
-;
-
-echo "<hr>";
-
-$array = ['Imelda', 'Francisco', 'Bryan', 'Fátima', 'Erwin', 'Keily', 'Pedrito'];
-
-foreach($array as $nombre){
-    printf("<h3>Yo {$nombre} y soy parte de la familia Flores.</h3>");
-};
