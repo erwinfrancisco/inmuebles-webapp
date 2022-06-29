@@ -16,15 +16,18 @@
         </div>
     </header>
 
-    <!-- Título de la Sección -->
+    <!-- Tabla de contenido de mapa -->
     <div class="titulo-principal">
         <h1>Inmuebles por Fiscalía de Distrito</h1>
     </div>
-
-    <!-- Tabla General de Contenido -->
     <main>
         <div class="tabla-contenido-mapa-fiscalias">
-            <?=include('FD00-tabla-contenido-mapa-fiscalias.php')?>
+            <div id="tcmf-nuevo-laredo">Fiscalía de Distrito I. <span>Nuevo Laredo</span></div>
+            <div id="tcmf-reynosa">Fiscalía de Distrito II. <span>Reynosa</span></div>
+            <div id="tcmf-matamoros">Fiscalía de Distrito III. <span>Matamoros</span></div>
+            <div id="tcmf-victoria">Fiscalía de Distrito IV. <span>Victoria</span></div>
+            <div id="tcmf-el-mante">  Fiscalía de Distrito V. <span>El Mante</span></div>
+            <div id="tcmf-zona-sur">Fiscalía de Distrito VI. <span>Zona Sur</span></div>
         </div>
 
         <!-- Mapa Fiscalías de Distrito -->

@@ -144,7 +144,7 @@ main{
 }
 .mapa-fiscalias-svg-victoria:hover{
     transform: scale(1.003);
-  
+
 }
 .mapa-fiscalias-svg-el-mante:hover{
     transform: scale(1.003);
@@ -156,6 +156,14 @@ main{
 }
 
 /* Contenido de las consultas de los inmuebles */
+
+.instrucciones-flecha, #instrucciones-flecha-img{
+    margin:35px;
+    text-align: center;
+}
+#instrucciones-flecha-1, #instrucciones-flecha-2{
+    text-align: center;
+}
 
 .contenido{
     margin-top: 0%;
