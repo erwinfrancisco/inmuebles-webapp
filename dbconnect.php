@@ -1,5 +1,5 @@
 <?php
-
+// Conexión PDO
 try{
     $conn = new PDO('mysql:host=localhost;dbname=fgj', "root", null);
     $consulta_nuevo_laredo = $conn->query("SELECT * FROM inmuebles WHERE fiscalia_distrito = 'I - Nuevo Laredo' ORDER BY municipio");

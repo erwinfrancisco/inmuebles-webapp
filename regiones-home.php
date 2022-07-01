@@ -55,7 +55,7 @@
                 }
             }
             ?>
-            <!-- <div class="instrucciones-flecha">
+            <div class="instrucciones-flecha">
                 <img src="./img/pin.png" alt="Pin">
             </div>
             <div id=instrucciones-flecha-1>
@@ -67,7 +67,7 @@
             </div>
             <div id="instrucciones-flecha-img">
                 <img src="./img/arrow.png" alt="Flecha izquierda">
-            </div> -->
+            </div>
             
         </div>
         
