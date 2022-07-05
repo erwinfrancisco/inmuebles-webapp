@@ -25,15 +25,17 @@
 
     <!-- Tabla de contenido de mapa -->
     <main>
-        <div class="tabla-contenido-mapa-fiscalias">
-            <?php include('./FD00-tabla-contenido-mapa-fiscalias.php')?>
+        <div id="cuadro-flotante">
+            <div class="tabla-contenido-mapa-fiscalias">
+                <?php include('./FD00-tabla-contenido-mapa-fiscalias.php')?>
+            </div>
+
+            <!-- Mapa Fiscalías de Distrito -->
+            <div class="mapa-fiscalias">
+                <?php include('./FD01-mapa-fiscalias-svg.php')?>
+            </div>
         </div>
 
-        <!-- Mapa Fiscalías de Distrito -->
-        <div class="mapa-fiscalias">
-            <?php include('./FD01-mapa-fiscalias-svg.php')?>
-        </div>
-        
         <!-- Contenido de Inmuebles por Fiscalía -->        
         <div style=background:white; class="contenido">
             <?php
@@ -75,15 +77,6 @@
     
         <script src="./js/main.js"></script>
     
-    <!-- Footer -->
-    <footer>
-        <div class="div_footer">
-            <br>
-            <span>DIRECCIÓN GENERAL DE ADMINISTRACIÓN</span><br>
-            <span>Dirección de Planeación y Seguimiento</span><br>
-            <address><span>Av. José Sulaimán Chagnón #641, entronque con Libramiento Naciones Unidas
-        C.P. 87039, Ciudad Victoria, Tamaulipas, México</span></address><br>
-        </div>
-    </footer>
+    
 </body>
 </html>
