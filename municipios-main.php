@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style><?php include 'css/estilos.css'?></style>
+    
+    
     <title>Inmuebles de la Fiscalía General de Justicia del Estado de Tamaulipas</title>
 </head>
 <body>
@@ -26,8 +28,8 @@
     <!-- Tabla de contenido de mapa -->
     <main>
         <div id="cuadro-flotante">
-            <div class="tabla-contenido-mapa-fiscalias">
-                <?php include('./FD00-tabla-contenido-mapa-fiscalias.php')?>
+            <div class="tabla-contenido-mapa-fiscalias" style="border-style:none">
+                <?php include('./MU00-tabla-contenido-mapa-municipios.php')?>
             </div>
 
             <!-- Mapa Municipios de Tamaulipas -->
