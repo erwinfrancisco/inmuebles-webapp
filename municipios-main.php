@@ -1,4 +1,5 @@
 <?php include("./dbconnect.php");?>
+<?php include('./MU00-tabla-contenido-mapa-municipios.php')?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -28,8 +29,11 @@
     <!-- Tabla de contenido de mapa -->
     <main>
         <div id="cuadro-flotante">
-            <div class="tabla-contenido-mapa-fiscalias" style="border-style:none">
-                <?php include('./MU00-tabla-contenido-mapa-municipios.php')?>
+            <div class="tabla-contenido-mapa-municipios1">
+            <?=municipios1();?>
+            </div>
+            <div class="tabla-contenido-mapa-municipios2">
+                <?=municipios2();?>
             </div>
 
             <!-- Mapa Municipios de Tamaulipas -->
@@ -40,25 +44,7 @@
 
         <!-- Contenido de Inmuebles por Fiscalía -->        
         <div style=background:white; class="contenido">
-            <?php
-            if(isset($_REQUEST['fiscalia'])){
-                if($_REQUEST['fiscalia'] == "nuevo-laredo"){
-                    consultaRegiones($consulta_nuevo_laredo);
-                }elseif($_REQUEST['fiscalia'] == "matamoros"){
-                    consultaRegiones($consulta_matamoros);
-                }elseif($_REQUEST['fiscalia'] == "reynosa"){
-                    consultaRegiones($consulta_reynosa);
-                }elseif($_REQUEST['fiscalia'] == "victoria"){
-                    consultaRegiones($consulta_victoria);
-                }elseif($_REQUEST['fiscalia'] == "el-mante"){
-                    consultaRegiones($consulta_el_mante);
-                }elseif($_REQUEST['fiscalia'] == "zona-sur"){
-                    consultaRegiones($consulta_zona_sur);
-                }else{
-                    echo "verifica tu solicitud";
-                }
-            }
-            ?>
+                    
             <div class="instrucciones-flecha">
                 <img src="./img/pin.png" alt="Pin">
             </div>

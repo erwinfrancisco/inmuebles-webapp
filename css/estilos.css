@@ -260,7 +260,66 @@ main{
 
 /* Municipios */
 
-.tamaulipas__Cruillas:hover{
-    fill: #9AECA4;
+.tabla-contenido-mapa-municipios1 {
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-left: 3rem;
+    margin-right: 0rem;
+    padding: 1rem;
+    position: relative;
+    float: left;
+    display: block;
+    
+}
+.tabla-contenido-mapa-municipios2 {
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    float: left;
+    display: block;
+    
 }
 
+.nombre-municipio-btn{
+    
+    vertical-align: middle;
+    width: 100px;
+    height: 16px;
+    margin: 7px;
+    background-color:dodgerblue;
+    padding: 1px;
+    border-radius: 10px;
+    
+    font-size: 11px;
+    text-align: center;
+    color: white;
+
+}
+
+.municipio-texto-btn{
+    color:white;
+}
+
+.enlace-municipio{
+    text-decoration: none;
+}
+
+.nombre-municipio-btn:hover{
+    
+    vertical-align: middle;
+    width: 100px;
+    height: 16px;
+    margin: 7px;
+    background-color:#45C4AF;
+    padding: 1px;
+    border-radius: 10px;
+    
+    font-size: 11px;
+    text-align: center;
+    color: white;
+
+}
