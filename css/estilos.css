@@ -1,3 +1,12 @@
+:root{
+    --FD1-laredo-fill-color: #22495A;
+    --FD2-reynosa-fill-color: #13678B;
+    --FD3-matamoros-fill-color:#1D7A92;
+    --FD4-victoria-fill-color:#45C4AF;
+    --FD5-ElMante-fill-color:#9AECA4;
+    --FD6-ZonaSur-fill-color:#DAFDB9;
+}
+
 header{
     width: 100%;
     height: auto;
@@ -290,7 +299,7 @@ main{
     width: 100px;
     height: 16px;
     margin: 7px;
-    background-color:dodgerblue;
+    background-color:#448aff ;
     padding: 1px;
     border-radius: 10px;
     
@@ -298,6 +307,12 @@ main{
     text-align: center;
     color: white;
 
+}
+
+/* id de botones del municipio*/
+#btn__el-mante{
+    /*background-color: orangered;*/
+    background-color:#448aff ;
 }
 
 .municipio-texto-btn{
@@ -308,18 +323,56 @@ main{
     text-decoration: none;
 }
 
-.nombre-municipio-btn:hover{
+.nombre-municipio-btn:hover, #btn__el-mante:hover{
     
-    vertical-align: middle;
-    width: 100px;
-    height: 16px;
-    margin: 7px;
-    background-color:#45C4AF;
-    padding: 1px;
-    border-radius: 10px;
-    
-    font-size: 11px;
-    text-align: center;
-    color: white;
+    background-color: #2962ff;
 
+}
+
+/*Personalización de municipios*/
+
+/*Fiscalía de Distrito de Nuevo Laredo*/
+.tamaulipas__NuevoLaredo:hover{
+    fill:var(--FD1-laredo-fill-color);
+}
+
+/*Fiscalía de Distrito - Reynosa*/
+.tamaulipas__Guerrero:hover, .tamaulipas__Mier:hover, .tamaulipas__MiguelAleman:hover, 
+.tamaulipas__Camargo:hover,.tamaulipas__DiazOrdaz:hover, .tamaulipas__Reynosa:hover, 
+.tamaulipas__RioBravo:hover{
+    fill:var(--FD2-reynosa-fill-color);
+}
+
+/*Fiscalía de Distrito - Matamoros*/
+.tamaulipas__ValleHermoso:hover, .tamaulipas__Matamoros:hover, .tamaulipas__Mendez:hover,
+.tamaulipas__SanFernando:hover,.tamaulipas__Burgos:hover,.tamaulipas__Cruillas:hover{
+
+    fill:var(--FD3-matamoros-fill-color);
+
+}
+
+
+/*Fiscalía de Distrito - Victoria*/
+.tamaulipas__SanNicolas:hover, .tamaulipas__SanCarlos:hover, .tamaulipas__Villagran:hover,
+.tamaulipas__Mainero:hover, .tamaulipas__Jimenez:hover, .tamaulipas__Abasolo:hover, .tamaulipas__SotoLaMarina:hover,
+.tamaulipas__Hidalgo:hover, .tamaulipas__Padilla:hover, .tamaulipas__Casas:hover, .tamaulipas__Guemez:hover,
+.tamaulipas__Victoria:hover, .tamaulipas__Jaumave:hover, .tamaulipas__Miquihuana:hover,
+.tamaulipas__Bustamante:hover, .tamaulipas__Palmillas:hover, .tamaulipas__Tula:hover{
+
+    fill:var(--FD4-victoria-fill-color);
+
+}
+
+/*Fiscalía de Distrito - El Mante*/
+
+.tamaulipas__Llera:hover, .tamaulipas__GomezFarias:hover,.tamaulipas__Xicotencatl:hover,
+.tamaulipas__Gonzalez:hover, .tamaulipas__Aldama:hover, .tamaulipas__Ocampo:hover,
+.tamaulipas__AntiguoMorelos:hover, .tamaulipas__NuevoMorelos:hover, .tamaulipas__ElMante:hover{
+    fill:var(--FD5-ElMante-fill-color);
+
+}
+
+.tamaulipas__Altamira:hover, .tamaulipas__Tampico:hover, .tamaulipas__Madero:hover{
+    fill:var(--FD6-ZonaSur-fill-color);
+    
 }

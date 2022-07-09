@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style><?php include 'css/estilos.css'?></style>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" >
     
     
     <title>Inmuebles de la Fiscalía General de Justicia del Estado de Tamaulipas</title>
@@ -15,10 +15,7 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <img src="./img/header_vector.png" width="100%" height="135px">
-        <div class="logo">
-            <img src="./img/logo_fgj_blanco.png" width="100%" height="100%" alt="Fiscalía General de Justicia del Estado de Tamaulipas">
-        </div>
+        <?= include_once('./00-header-azul.php'); ?>
     </header>
 
     <!-- Título de la Sección -->

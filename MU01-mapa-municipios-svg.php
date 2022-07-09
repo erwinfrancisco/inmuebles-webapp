@@ -1,3 +1,4 @@
+<style><?php include 'css/estilos.css'?></style>
 <svg class="mapa-fiscalias-svg" xmlns="http://www.w3.org/2000/svg" width="627" height="1280" fill="currentColor" viewBox="0 0 627 1280">
   <g class="tamaulipas__Tamaulipas">
     <path fill="#fff" d="M0 0h627v1280H0z"/>

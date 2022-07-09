@@ -60,6 +60,29 @@ try{
     $mun_llera = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Llera' ORDER BY nombre_alias");
     $mun_mainero = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Mainero' ORDER BY nombre_alias");
     $mun_el_mante = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'El Mante' ORDER BY nombre_alias");
+    $mun_matamoros = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Matamoros' ORDER BY nombre_alias");
+    $mun_mendez = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Méndez' ORDER BY nombre_alias");
+    $mun_mier = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Mier' ORDER BY nombre_alias");
+    $mun_miguel_aleman = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Miguel Alemán' ORDER BY nombre_alias");
+    $mun_miquihuana = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Miguel Alemán' ORDER BY nombre_alias");
+    $mun_nuevo_laredo = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Nuevo Laredo' ORDER BY nombre_alias");
+    $mun_nuevo_morelos = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Nuevo Morelos' ORDER BY nombre_alias");
+    $mun_ocampo = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Ocampo' ORDER BY nombre_alias");
+    $mun_padilla = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Padilla' ORDER BY nombre_alias");
+    $mun_palmillas = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Palmillas' ORDER BY nombre_alias");
+    $mun_reynosa = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Reynosa' ORDER BY nombre_alias");
+    $mun_rio_bravo = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Río Bravo' ORDER BY nombre_alias");
+    $mun_san_carlos = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'San Carlos' ORDER BY nombre_alias");
+    $mun_san_fernando = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'San Fernando' ORDER BY nombre_alias");
+    $mun_san_nicolas = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'San Nicolás' ORDER BY nombre_alias");
+    $mun_soto_la_marina = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Soto la Marina' ORDER BY nombre_alias");
+    $mun_tampico = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Tampico' ORDER BY nombre_alias");
+    $mun_tula = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Tula' ORDER BY nombre_alias");
+    $mun_valle_hermoso = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Valle Hermoso' ORDER BY nombre_alias");
+    $mun_victoria = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Victoria' ORDER BY nombre_alias");
+    $mun_villagran = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Villagrán' ORDER BY nombre_alias");
+    $mun_xicotencatl = $conn->query("SELECT * FROM inmuebles WHERE municipio = 'Xicoténcatl' ORDER BY nombre_alias");
+
 
     
     function consultaMunicipio($consulta){

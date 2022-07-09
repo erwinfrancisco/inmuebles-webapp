@@ -7,7 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style><?php include 'css/estilos.css'?></style>
+    <link ref="stylesheet" rel="text/css" href="./css/estilos.css">
+    
+    
     
     
     <title>Inmuebles de la Fiscalía General de Justicia del Estado de Tamaulipas</title>
@@ -15,10 +17,7 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <img src="./img/header_vector.png" width="100%" height="135px">
-        <div class="logo">
-            <img src="./img/logo_fgj_blanco.png" width="100%" height="100%" alt="Fiscalía General de Justicia del Estado de Tamaulipas">
-        </div>
+        <?= include_once('./00-header-azul.php'); ?>
     </header>
 
     <!-- Título de la Sección -->
@@ -52,6 +51,9 @@
 
         function seleccionaMunicipio($str_municipio, $consulta){
             echo "<h2 style='text-align:center';>" . $str_municipio . "</h2>";
+            if(consultaMunicipio($consulta) == null){
+                warning();
+            }
             return consultaMunicipio($consulta);
         }
 
@@ -59,6 +61,7 @@
         if(isset($_REQUEST['municipio'])){
             $pag = $_REQUEST['municipio'];
             switch($pag){
+                // Primer bloque de municipios.
                 case 'abasolo':
                     seleccionaMunicipio('Abasolo', $mun_abasolo);
                     break;
@@ -118,18 +121,79 @@
                     break;
                 case 'mainero':
                     seleccionaMunicipio('Mainero', $mun_mainero);
-                    if(consultaMunicipio($mun_mainero) == null){
-                        warning();
-                    }
                     break;
                 case 'el-mante':
                     seleccionaMunicipio('El Mante', $mun_el_mante);
-                    if(consultaMunicipio($mun_el_mante) == null){
-                        warning();
+                    break;
+                // Segundo bloque de municipios.
+                case 'matamoros':
+                    seleccionaMunicipio('Matamoros', $mun_matamoros);
+                    break;
+                case 'mendez':
+                    seleccionaMunicipio('Méndez', $mun_mendez);
+                    break;
+                case 'mier':
+                    seleccionaMunicipio('Mier', $mun_mier);
+                    break;
+                case 'miguel-aleman':
+                    seleccionaMunicipio('Miguel Alemán', $mun_miguel_aleman);
+                    break;
+                case 'miquihuana':
+                    seleccionaMunicipio('Miquihuana', $mun_miquihuana);
+                    break;
+                case 'nuevo-laredo':
+                    seleccionaMunicipio('Nuevo Laredo', $mun_nuevo_laredo);
+                    break;
+                case 'nuevo-morelos':
+                    seleccionaMunicipio('Nuevo Morelos', $mun_nuevo_morelos);
+                    break;
+                case 'ocampo':
+                    seleccionaMunicipio('Ocampo', $mun_ocampo);
+                    break;
+                case 'padilla':
+                    seleccionaMunicipio('Padilla', $mun_padilla);
+                    break;
+                case 'palmillas':
+                    seleccionaMunicipio('palmillas', $mun_palmillas);
+                    break;
+                case 'reynosa':
+                    seleccionaMunicipio('Reynosa', $mun_reynosa);
+                    break;
+                case 'rio-bravo':
+                    seleccionaMunicipio('Río Bravo', $mun_rio_bravo);
+                    break;
+                case 'san-carlos':
+                    seleccionaMunicipio('San Carlos', $mun_san_carlos);
+                    break;
+                case 'san-fernando':
+                    seleccionaMunicipio('San Fernando', $mun_san_fernando);
+                    break;
+                case 'san-nicolas':
+                    seleccionaMunicipio('San Nicolás', $mun_san_nicolas);
+                    break;
+                case 'soto-la-marina':
+                    seleccionaMunicipio('Soto la Marina', $mun_soto_la_marina);
+                    break;
+                case 'tampico':
+                    seleccionaMunicipio('Tampico', $mun_tampico);
+                    break;
+                case 'tula':
+                    seleccionaMunicipio('Tula', $mun_tula);
+                    break;
+                case 'valle-hermoso':
+                    seleccionaMunicipio('Valle Hermoso', $mun_valle_hermoso);
+                    break;
+                case 'victoria':
+                    seleccionaMunicipio('Victoria', $mun_victoria);
+                    break;
+                case 'villagran':
+                    seleccionaMunicipio('Villagrán', $mun_villagran);
+                    break;
+                case 'xicotencatl':
+                    seleccionaMunicipio('Xicoténcatl', $mun_xicotencatl);
                     break;
 
-                }
-                
+                        
         }
     }          
         ?>
