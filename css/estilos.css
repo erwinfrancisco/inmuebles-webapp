@@ -5,6 +5,7 @@
     --FD4-victoria-fill-color:#45C4AF;
     --FD5-ElMante-fill-color:#9AECA4;
     --FD6-ZonaSur-fill-color:#DAFDB9;
+    --azul-institucional-color:#1C2136;
 }
 
 header{
@@ -376,3 +377,4 @@ main{
     fill:var(--FD6-ZonaSur-fill-color);
     
 }
+
