@@ -16,8 +16,7 @@
     <div class="logo">
         <img src="./img/logo_fgj_blanco.png" width="100%" height="100%" alt="Fiscalía General de Justicia del Estado de Tamaulipas">
     </div></a>
-</header>
-<div class="menu-la right-align">
+    <div class="menu-la right-align">
     <ul id="slide-out" class="sidenav juancho">
         <li><div class="user-view">
                 <div class="background" style="height:120px;padding:20px;">
@@ -69,6 +68,8 @@
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons small white-text">menu</i></a>
 </div>
+</header>
+
 
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript">M.AutoInit();</script>

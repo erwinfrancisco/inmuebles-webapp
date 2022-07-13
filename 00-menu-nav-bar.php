@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.css" type="text/css" >
-    <link rel="stylesheet" href="css/new-style.css" type="text/css" >
-    <title>Document</title>
-</head>
-<body>
 <header>
     <img src="./img/header_vector.png" width="100%" height="135px">
     <a href="index.php">
@@ -69,21 +57,3 @@
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons small white-text">menu</i></a>
 </div>
-
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script type="text/javascript">M.AutoInit();</script>
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(edge, right);
-});
-
-// Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-// var collapsibleElem = document.querySelector('.collapsible');
-// var collapsibleInstance = M.Collapsible.init('edge', 'right');
-
-</script>
-
-</body>
-</html>
-

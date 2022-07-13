@@ -9,6 +9,7 @@
     --azul-institucional-color:#1C2136;
 }
 
+/* Configuración preliminar */
 html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +23,7 @@ body{
     margin: 0;
     padding: 0;
 }
-/*Form Conteiner*/
+/*Encabezado*/
 
 .logo{
     position: absolute;
@@ -32,12 +33,32 @@ body{
     height: auto;
 }
 
-.contenedor-de-formularios{
-    margin-top: 135px;
-    background-color: salmon;
-}
-
 .menu-la{
     margin-top: -115px;
     margin-right: 30px;
+}
+
+/* Main Conteiner */
+
+.contenedor-main .tabla-contenido-mapa-fiscalias{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Tabla de contenido */
+#tcmf-nuevo-laredo, #tcmf-reynosa, #tcmf-matamoros, #tcmf-victoria, #tcmf-el-mante,#tcmf-zona-sur{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    font-size: .8rem;
+    width: 134px;
+    height: 25px;
+    padding: 6px;
+    margin: 10px;
+}
+
+.mapa-fiscalias{
+    width: 200px;
 }
