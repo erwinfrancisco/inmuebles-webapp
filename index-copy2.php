@@ -6,34 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS  -->
     <style><?= include_once('./css/materialize.css')?></style>
-    <style><?= include_once('./css/estilos.css')?></style>
+    <style><?= include_once('./css/estilos2.css')?></style>
     
     <title>Inmuebles de la Fiscalía General de Justicia del Estado de Tamaulipas</title>
 </head>
 <body id="body_index">
 
     <!-- Encabezado -->
-    <header class="header-blanco">
+    <header class="contenedor-header-blanco">
         <!-- <div class="contenedor-header-blanco"> -->
-            <div class="logo-azul"></div>
-            <div class="contenedor-botones-header">
-                <div class="naveg-header">
-                    <a href="./regiones-main.php" class="waves-effect waves-light btn blue accent-2 btnavbar">Inmuebles</a>
-                    <a href="./regiones-main.php" class="waves-effect waves-light btn blue accent-2 btnavbar">Áreas</a>
-                    <a href="./regiones-main.php" class="waves-effect waves-light btn blue accent-2 btnavbar">Reportes</a>  
-                </div>
-                
-                <div class="haber">
-                    <form action="#" method="post">
-                        <input type="text" id="buscador" name="buscador" placeholder="Buscar área o inmueble" name="buscador">
-                        <input type="submit" class="waves-effect waves-light btn blue accent-2" value="Buscar">
-                    </form>
-                </div>
+            <div class="contenedor-logo-azul"></div>
+            <div class="contenedor-buscador">
+                <form action="#" method="post">
+                    <input type="text" id="buscador" name="buscador" placeholder="Buscar área o inmueble" name="buscador">
+                    <input type="submit" class="boton-buscar waves-effect waves-light btn blue accent-2" value="Buscar">
+                </form>
             </div>
-        <!-- </div> -->
-        <!-- <div class="contenedor-header-blanco2">
-            <div class="busqueda"><input type="text" placeholder="Buscar área o inmueble"></div>
-        </div> -->
+            <div class="naveg-header">
+                <a href="./regiones-main.php" class="waves-effect waves-light btn blue accent-2 btnavbar">Inmuebles</a>
+                <a href="./regiones-main.php" class="waves-effect waves-light btn blue accent-2 btnavbar">Áreas</a>
+                <a href="./regiones-main.php" class="waves-effect waves-light btn blue accent-2 btnavbar">Reportes</a>  
+            </div>
         
     </header>
     
