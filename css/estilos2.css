@@ -7,10 +7,50 @@
     --FD6-ZonaSur-fill-color:#9dc776;
     --azul-institucional-color:#1C2136;
 }
-.html-principal{
+/* Iconos */
+@font-face {
+font-family: 'Material Icons';
+font-style: normal;
+font-weight: 400;
+src: url('css/font/MaterialIcons-Regular.ttf');
+src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('css/font/MaterialIconsOutlined-Regular.ttf') format('opentype'),
+    url('css/font/MaterialIconsRound-Regular.ttf') format('opentype'),
+    url('css/font/MaterialIconsSharp-Regular.otf') format('opentype'),
+    url('css/font/MaterialIconsTwoTone-Regular.otf') format('opentype');
+}
+
+.material-icons {
+font-family: 'Material Icons';
+font-weight: normal;
+font-style: normal;
+font-size: 24px;
+display: inline-block;
+line-height: 1;
+text-transform: none;
+letter-spacing: normal;
+word-wrap: normal;
+white-space: nowrap;
+direction: ltr;
+
+/* Soporte a todos los navegadores */
+-webkit-font-smoothing: antialiased;
+/* Safari y Chrome */
+text-rendering: optimizeLegibility;
+
+/* Firefox */
+-moz-osx-font-smoothing: grayscale;
+
+/* IE */
+font-feature-settings: 'liga';
+}
+
+.html{
     width:1440px;
     margin:0 auto;
 }
+
 /*---- Body ---- */
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -19,16 +59,17 @@ body{
     padding: 0;
 }
 
-#body_index{
+#body-background-blue{
     background-image: url('./img/background.png');
 }
 
-/*--- Header Blanco ---*/
+/*--- Header Backgorund Blanco ---*/
 .contenedor-header-blanco{
     
     position: fixed;
     width: 100%;
-    min-width: 50%;
+    min-width: 0%;
+    max-width: 1440px;
     height: 17%;
     background-image: url('./img/header_vector_blanco.png');
     background-repeat: no-repeat;
@@ -36,211 +77,163 @@ body{
     background-size: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* border: 4px solid red; */
-    
+    justify-content:space-around;
+    /* flex-wrap: wrap; */
+    /* border: 4px solid red; */   
 }
 .contenedor-logo-azul{   
     background-image: url('./img/logo_fgj_azul.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:contain;
     width: 16%;
     height: 85%;
-    min-width: 150px;
-    border: 4px solid purple;
+    min-width: 200px;
     margin-top: 10px;
-    
+    /* Para identificado el .contenedor-logo-azul */
+    /* border: 4px solid purple; */
 }
 
 .contenedor-buscador{
     margin-top: 10px;
-    border:orange 4px solid;
+    margin-left: 2%;
     width: 30%;
+    /* Para identificar el .contenedor-buscador */
+    /* border:orange 4px solid; */
 }
 
 .contenedor-header-blanco >.naveg-header{
     margin-top: 10px;
     width: 50%;
     height: 35%;
-    border:4px solid blue; 
     display: flex;
     flex-wrap: wrap;
     align-self:stretch;
     justify-content: flex-end;
     gap:2%;
-}
-.btnavbar{
-    width: 140px;
-}
-/*--- Header Blanco (Responsive 613px) ---*/
-@media (max-width: 613px) {
-
-    .btnavbar{
-        width: 135px;
-    }
-    .contenedor-botones-header{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        /* border:4px greenyellow solid; */
-    }
-    .naveg-header {
-
-    margin-top: 0;
-    margin-left: 0;
-    justify-content: center;
-    width: 100%;
-    }
-    .logo-azul{
-        margin-top: 25px;
-        align-items: center;
-    }
-    .naveg-header-busqueda{
-        /* border:orange 4px solid; */
-        width: 100px;       
-        /* border:1px solid grey; */
-        margin: 0;
-    }
-}
-
-.header-blanco{
-    margin-top: 0%;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1440px;
-    /* border: 4px green solid; */
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* ---Header Azul */
-
-.header-azul{
-    
-    position: fixed;
-    width: 100%;
-    min-width: 50%;
-    height: 17%;
-    flex-wrap: wrap;
-    background-image: url('./img/header_vector_blanco.png');
-    background-repeat: no-repeat;
-    background-position: 0%;
-    background-size: auto;
-    display: flex;
-    flex-direction: row;
-    /* border: 4px solid red; */
-    
-}
-.logo-blanco{   
-    background-image: url('./img/logo_fgj_azul.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 16%;
-    height: 85%;
-    min-width: 150px;
-    /* border: 4px solid purple; */
-    margin-top: 10px;
-    
-}
-.contenedor-botones-header{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    /* border:4px greenyellow solid; */
-}
-.naveg-header-busqueda{
-    margin-top: 5px;
-    /* border:orange 4px solid; */
-    width: 35%;
-    align-items: flex-end;
-}
-
-.naveg-header{
-    width: 100%;
-    height: 35%;
+    /* Para identificar el .naveg-header */
     /* border:4px solid blue;  */
-    display: flex;
-    flex-wrap: wrap;
-    align-self:stretch;
-    justify-content: flex-end;
-    gap:2%;
 }
 .btnavbar{
     width: 140px;
 }
-/*--- Header Blanco (Responsive 613px) ---*/
-@media (max-width: 613px) {
 
-    .btnavbar{
-        width: 135px;
-    }
-    .contenedor-botones-header{
+/*--- Header Blanco (Responsive 1110px) ---*/
+@media (max-width: 1110px) {
+    .contenedor-header-blanco{
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        display:flex;
+        flex-direction: row;
         flex-wrap: wrap;
+    }
+    .contenedor-header-blanco > .naveg-header{
+        width: 140px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:no-wrap;
         justify-content: center;
         align-items: center;
-        /* border:4px greenyellow solid; */
     }
-    .naveg-header {
+    .contenedor-buscador{
+        width: 300px;
+        margin-left: 3%;
+        justify-items: flex-start;
+        margin-right: 3%;
+    }
+}
 
-    margin-top: 0;
-    margin-left: 0;
-    justify-content: center;
-    width: 100%;
+/*--- Header Blanco (Responsive 680px) ---*/
+@media (max-width: 680px) {
+    .contenedor-header-blanco{
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    .logo-blanco{
-        margin-top: 25px;
+    .contenedor-header-blanco > .naveg-header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:no-wrap;
+        justify-content: center;
         align-items: center;
     }
-    .naveg-header-busqueda{
-        /* border:orange 4px solid; */
-        width: 100px;       
-        /* border:1px solid grey; */
-        margin: 0;
-    }
-}
-
-.header-azul{
-    margin-top: 0%;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1440px;
-    /* border: 4px green solid; */
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media (max-width: 1080px) {
-    .naveg-header-busqueda{
-        /* border:orange 4px solid; */
-        width: 45%;       
-        /* border:1px solid grey; */
+    .contenedor-buscador{
+        width: 300px;
+        margin-left: 3%;
         justify-items: flex-start;
-        margin-right: 55%;
+        margin-right: 3%;
     }
-
 }
 
+/*--- Header Blanco (Responsive 540px) ---*/
+@media (max-width: 550px) {
+    .contenedor-header-blanco{
+        width: 100%;
+        min-width: 225px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contenedor-header-blanco > .naveg-header{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        gap:10px
+    }
+    .contenedor-buscador{
+        width: 50%;
+        min-width: 200px;
+        margin-left: 3%;
+        justify-items: flex-start;
+        margin-right: 3%;
+    }
+}
 
+/*--- Header Blanco (Responsive 534px) ---*/
+@media (max-width: 534px) {
+    .contenedor-header-blanco{
+        width: 100%;
+        min-width: 225px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contenedor-header-blanco > .naveg-header{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-buscador{
+        width: 50%;
+        min-width: 200px;
+        margin-left: 3%;
+        justify-items: flex-start;
+        margin-right: 3%;
+    }
+}
 
+/*--- Header Blanco (Responsive 510px) ---*/
+@media (max-width: 513px) {
+    .contenedor-header-blanco > .naveg-header{
+        width: 40%;
+        gap:10px;
+    }
+}
 
-
-
-
-
-
-
-
-
+/*--- Header Blanco (Responsive 508px) ---*/
+@media (max-width: 508px) {
+    .contenedor-header-blanco > .naveg-header{
+        width: 40%;
+        min-width: 199px;
+        gap:10px;
+    }
+}
 
 
 
@@ -249,7 +242,7 @@ body{
     padding-left: 150px ;
 }
 
-.contenedor-imagen{
+/* .contenedor-imagen{
     display: flex;
     width: auto;
     height: auto;
@@ -257,7 +250,34 @@ body{
     margin: 225px 20px 150px 175px;
     padding-top: 0px;
 
+} */
+
+.contenedor-imagen-index{
+    position:absolute;
+    /* margin-top: 20%;
+    margin-left: 10%; */
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    gap:25px;
+    width: 80%;
+    height: 100%;
 }
+
+
+.mapa-ubicacion, .consulta-region, .consulta-municipio{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+
+
+
 .contenedor-imagen > div{
     text-align: center;
     margin: 20px;
